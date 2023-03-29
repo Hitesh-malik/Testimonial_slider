@@ -1,6 +1,6 @@
 import React from "react";
 import reviews from "./data";
-import Testimonial from "./components/Testimonial";
+import Testimonial from "./Components/Testimonial";
 
 const App = () => {
   return (
