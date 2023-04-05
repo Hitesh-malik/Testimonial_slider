@@ -1,11 +1,13 @@
 import React from 'react'
 import Card from './Card';
+// react icons
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useState } from 'react';
 
 
 const Testimonial = (props) => {
   let reviews = props.reviews;
+
   const [index, setIndex] = useState(0);
 
   function leftShiftHandler() {
@@ -17,6 +19,7 @@ const Testimonial = (props) => {
   }
 
   function surpriseHandler() {
+    // ->([0 - 1) * reviews.length ) -> this will provide in range of (0,reviews.length] can be in decimal that why math.floor
     let randomIndex = Math.floor(Math.random() * reviews.length)
     setIndex(randomIndex);
   }

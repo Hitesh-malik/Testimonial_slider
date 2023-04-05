@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
+import {FaQuoteLeft, FaQuoteRight} from 'react-icons/fa'; // // react icons
 
 
 const Card = (props) => {
@@ -11,7 +11,7 @@ const Card = (props) => {
         className="aspect-square rounded-full w-[140px] h-[140px] z-[25]"
         src={review.image}/>
         <div className='w-[140px] h-[140px] bg-violet-500 rounded-full absolute
-         top-[-6px] z-[-10] left-[10px]'></div>
+         -top-[6px] -z-[10] left-[10px]'></div>
       </div>
       
       <div className='text-center mt-7'>
